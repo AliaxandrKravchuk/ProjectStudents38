@@ -2,7 +2,7 @@ package com.lesson3Project.base;
 
 import com.lesson3Project.model.Address;
 
-public class People {
+public abstract class People {
 
     private String name;    // имя (возмость изменения)
     private String sname;// фамилия (возмость изменения)
