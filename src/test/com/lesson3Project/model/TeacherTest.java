@@ -1,4 +1,4 @@
-package test.com.lesson3Project.HM_project;
+package test.com.lesson3Project.model;
 
 import com.lesson3Project.model.Teacher;
 import org.junit.Test;
