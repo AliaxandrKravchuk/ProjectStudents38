@@ -74,14 +74,17 @@ public class People {
     }
 
     public int getPay() {
+
         return pay;
     }
 
     public int getHour() {
+
         return hour;
     }
 
     public void setHour(int summ) {
+
         this.hour = hour;
     }
 }

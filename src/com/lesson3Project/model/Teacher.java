@@ -13,7 +13,7 @@ public class Teacher extends People {
         System.out.println("Учитель:" + "\n ФИО: " + getName() + " " + getSname() + "\n Возраст: " + getAge() + "\n Зарплата: " + zpm() + "\n Адрес: " + getAddress().displayInfo());
     }
 
-    public String displayInfoName() {
+    public String toString() {
         return  " " + getName() + " " + getSname();
     }
 }

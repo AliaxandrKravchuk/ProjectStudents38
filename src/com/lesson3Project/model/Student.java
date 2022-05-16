@@ -12,7 +12,7 @@ public class Student extends People {
         System.out.println ("Студент:" + "\n ФИО: " + getName() + " " + getSname() + "\n Возраст: " + getAge() + "\n Адрес: " + getAddress().displayInfo());
     }
 
-    public String displayInfoName() {
+    public String toString() {
 
         return " " + getName() + " " + getSname();
     }

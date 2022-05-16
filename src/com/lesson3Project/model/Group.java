@@ -27,8 +27,10 @@ public class Group {
         this.clas = clas;
     }
 
+
+
     public void displayInfo() {
         System.out.println("Группа:" + "\n Название: " + name + "\n Курс: " + clas
-                + "\n Имя студента: " + students + "\n Имя преподователя: " + teachers);
+                + "\n Имя студента: " + students + "." + "\n Имя преподователя: " + teachers + ".");
     }
 }
