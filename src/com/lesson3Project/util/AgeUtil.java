@@ -8,10 +8,8 @@ public class AgeUtil {
 
     public static void checkAge(People age) {
         try {
-            checkAgeYoung(age);
-            checkAgeOld(age);
-
-            System.out.println("Возраст подходит");
+            AgeUtil.checkAgeYoung(age);
+            AgeUtil.checkAgeOld(age);
 
         } catch (YoungException | OldException e) {
             e.printStackTrace();
