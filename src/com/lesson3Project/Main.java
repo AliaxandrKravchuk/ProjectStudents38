@@ -1,5 +1,6 @@
 package com.lesson3Project;
 
+import com.lesson3Project.base.People;
 import com.lesson3Project.model.Address;
 import com.lesson3Project.model.Group;
 import com.lesson3Project.model.Student;
@@ -22,7 +23,8 @@ public class Main {
         //student2.displayInfo();
 
         Address addressSt3 = new Address("Minsk", "a3", 3, 3);
-        Student student3 = new Student("n3", "s3", 10, addressSt3);
+        Student student3 = new Student("n3", "s3", 199, addressSt3);
+//        student3.setAge(2555);
         student3.displayInfo();
 
         Address addressT1 = new Address("Минск", "Есенина", 1, 11);

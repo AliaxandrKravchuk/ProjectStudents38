@@ -5,6 +5,7 @@ import com.lesson3Project.base.People;
 public class Student extends People {
 
     public Student(String name, String sname, int age, Address address) {
+
         super(name, sname, age, address);
     }
 

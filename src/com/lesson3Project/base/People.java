@@ -11,11 +11,6 @@ public abstract class People {
     private int pay; // зарплата (возмость изменения)
     private int hour;//зп за месяц(часы)
 
-    public void setPay(int pay) {
-
-        this.pay = pay;
-    }
-
     public int zpm() {
 
         return hour * pay;
@@ -28,6 +23,10 @@ public abstract class People {
         this.pay = pay;
         this.hour = hour;
         this.address = address;
+    }
+
+    public void setPay(int pay) {
+        this.pay = pay;
     }
 
     public People(String name, String sname, int age, Address address) {
