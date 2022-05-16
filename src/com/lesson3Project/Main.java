@@ -1,10 +1,14 @@
 package com.lesson3Project;
 
 import com.lesson3Project.base.People;
+import com.lesson3Project.exception.AgeException;
+import com.lesson3Project.exception.OldException;
+import com.lesson3Project.exception.YoungException;
 import com.lesson3Project.model.Address;
 import com.lesson3Project.model.Group;
 import com.lesson3Project.model.Student;
 import com.lesson3Project.model.Teacher;
+import com.lesson3Project.util.AgeUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,25 +29,37 @@ public class Main {
         Address addressSt3 = new Address("Minsk", "a3", 3, 3);
         Student student3 = new Student("n3", "s3", 199, addressSt3);
 //        student3.setAge(2555);
-        student3.displayInfo();
+//        try {
+//            AgeUtil.checkAge(student3);
+//
+//        } catch (Exception wrap) {
+//
+//            Exception cause = (Exception) wrap.getCause();
+//
+//            if (cause != null) {
+//                System.out.println("Not pass, cause: " + cause.getMessage());
+//            } else {
+//                System.out.println(wrap.getMessage());
+//            }
+            student3.displayInfo();
 
-        Address addressT1 = new Address("Минск", "Есенина", 1, 11);
-        Teacher teacher1 = new Teacher("Учитель", "Препод", 26, 100, 30, addressT1);
+            Address addressT1 = new Address("Минск", "Есенина", 1, 11);
+            Teacher teacher1 = new Teacher("Учитель", "Препод", 26, 100, 30, addressT1);
 //        teacher1.setAge(-12);
-        teacher1.displayInfo();
+            teacher1.displayInfo();
 
-        List<Student> students = new ArrayList<>();
-        students.add(student1);
-        students.add(student2);
-        students.add(student3);
+            List<Student> students = new ArrayList<>();
+            students.add(student1);
+            students.add(student2);
+            students.add(student3);
 
-        List<Teacher> teachers = new ArrayList<>();
-        teachers.add(teacher1);
+            List<Teacher> teachers = new ArrayList<>();
+            teachers.add(teacher1);
 
-        Group group = new Group("Java", "38", students, teachers);
-        group.displayInfo();
+            Group group = new Group("Java", "38", students, teachers);
+            group.displayInfo();
 
 
-
+        }
     }
 }
