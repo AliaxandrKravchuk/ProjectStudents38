@@ -58,7 +58,7 @@ public class People {
     }
 
     public void setAge(int age) {
-        if (age >= 0) {
+        if (age > 0) {
             this.age = age;
         } else {
             System.out.println("Ошибка! Возраст не может быть отрицательным!");

@@ -1,11 +1,14 @@
 package com.lesson3Project.model;
 
+import java.util.ArrayList;
+
 public class Group {
 
     private String name;    // название
     private String clas;//  курс
     private Student nameStudent; // ученик из Student(изм)
     private Teacher nameTeacher; // препод из Teacher(изм)
+
 
     public Group(String name, String clas, Student nameStudent, Teacher nameTeacher) {
         this.name = name;
@@ -15,6 +18,7 @@ public class Group {
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
