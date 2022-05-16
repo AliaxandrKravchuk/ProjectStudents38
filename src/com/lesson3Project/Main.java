@@ -1,9 +1,9 @@
 package com.lesson3Project;
 
-import com.lesson3Project.HM_project.Address;
-import com.lesson3Project.HM_project.Group;
-import com.lesson3Project.HM_project.Student;
-import com.lesson3Project.HM_project.Teacher;
+import com.lesson3Project.model.Address;
+import com.lesson3Project.model.Group;
+import com.lesson3Project.model.Student;
+import com.lesson3Project.model.Teacher;
 
 public class Main {
 
@@ -23,7 +23,7 @@ public class Main {
         //student3.displayInfo();
 
         Address addressT1 = new Address("Минск", "Есенина", 1, 11);
-        Teacher teacher1 = new Teacher("Учитель", "Препод", 26, 1000, addressT1);
+        Teacher teacher1 = new Teacher("Учитель", "Препод", 26, 100, 30, addressT1);
         teacher1.setAge(-12);
         teacher1.displayInfo();
 

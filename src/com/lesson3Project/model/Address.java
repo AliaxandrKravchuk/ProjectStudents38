@@ -1,4 +1,4 @@
-package com.lesson3Project.HM_project;
+package com.lesson3Project.model;
 
 public class Address {
 // возмость изменения
