@@ -5,6 +5,9 @@ import com.lesson3Project.model.Group;
 import com.lesson3Project.model.Student;
 import com.lesson3Project.model.Teacher;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -27,7 +30,15 @@ public class Main {
         teacher1.setAge(-12);
         teacher1.displayInfo();
 
-        Group group = new Group("Java", "38", student1, teacher1);
+        List<Student> students = new ArrayList<>();
+        students.add(student1);
+        students.add(student2);
+        students.add(student3);
+
+        List<Teacher> teachers = new ArrayList<>();
+        teachers.add(teacher1);
+
+        Group group = new Group("Java", "38", students, teachers);
         group.displayInfo();
 
 
