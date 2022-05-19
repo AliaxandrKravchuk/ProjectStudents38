@@ -35,4 +35,12 @@ public class Address {
         return "\n -Город: " + city + "\n -Улица: " + street + "\n -Дом: " + home + "\n -Квартира: " + room;
     }
 
+    @Override
+    public String toString() {
+        return "Адрес: " +
+                "город = " + city +
+                ", улица = " + street +
+                ", дом = " + home +
+                ", квартира = " + room + ".";
+    }
 }

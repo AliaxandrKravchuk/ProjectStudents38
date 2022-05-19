@@ -21,13 +21,13 @@ public class AgeUtil {
 
     private static void checkAgeYoung(People age) throws YoungException {
         if (age.getAge() < 16) {
-            throw new YoungException("Возраст меньше 16");
+            throw new YoungException("Возраст не подходит(Young)");
         }
     }
 
     private static void checkAgeOld(People age) throws OldException {
         if (age.getAge() > 100) {
-            throw new OldException("Возраст больше 100");
+            throw new OldException("Возраст не подходит(Old)");
         }
     }
 }

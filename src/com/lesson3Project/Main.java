@@ -4,11 +4,9 @@ import com.lesson3Project.base.People;
 import com.lesson3Project.exception.AgeException;
 import com.lesson3Project.exception.OldException;
 import com.lesson3Project.exception.YoungException;
-import com.lesson3Project.model.Address;
-import com.lesson3Project.model.Group;
-import com.lesson3Project.model.Student;
-import com.lesson3Project.model.Teacher;
+import com.lesson3Project.model.*;
 import com.lesson3Project.util.AgeUtil;
+import com.lesson3Project.util.Converter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,8 +55,12 @@ public class Main {
         List<Teacher> teachers = new ArrayList<>();
         teachers.add(teacher1);
 
-        Group group = new Group("Java", "38", students, teachers);
+        Group group = new Group("Java", 38, students, teachers);
         group.displayInfo();
+
+        Converter<Teacher, Metodist> converter = m -> new Metodist(m.getName(), m.getSname(), m.getAge(), m.getAddress());
+        Metodist methodist = converter.convert(teacher1);
+        methodist.displayInfo();
 
 
     }
