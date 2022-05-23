@@ -33,4 +33,14 @@ public class Group {
         System.out.println("Группа:" + "\n Название: " + name + "\n Курс: " + clas
                 + "\n Имя студента: " + students + "." + "\n Имя преподователя: " + teachers + ".");
     }
+
+    @Override
+    public String toString() {
+        return "Group: " +
+                "название='" + name + '\'' +
+                ", курс=" + clas +
+                ", студенты=" + students +
+                ", учителя=" + teachers +
+                '.';
+    }
 }

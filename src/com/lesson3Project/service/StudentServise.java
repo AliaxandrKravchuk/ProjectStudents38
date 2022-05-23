@@ -14,13 +14,13 @@ public class StudentServise {
         this.studentRepository = studentRepository;
     }
 
-    public void removeStudents(List<Student> removeStudents){
-        removeStudents.forEach(gr -> System.out.println(gr));
-        studentRepository.removeStudents(removeStudents);
+    public static void removeStudents(List<Student> removeStudents){
+        removeStudents.forEach(gr -> System.out.println("Уделен ст: " +gr));
+        StudentRepository.removeStudents(removeStudents);
     }
 
-    public void addStudents(List<Student> newStudents){
-        newStudents.forEach(gr -> System.out.println(gr));
-        studentRepository.addGroups(newStudents);
+    public static void addStudents(List<Student> newStudents){
+        newStudents.forEach(gr -> System.out.println("Добавлен ст: " + gr));
+        StudentRepository.addStudents(newStudents);
     }
 }

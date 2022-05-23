@@ -7,19 +7,19 @@ import java.util.List;
 
 public class StudentRepository {
 
-    private List<Student> students = new ArrayList<>();
+    private static List<Student> students = new ArrayList<>();
 
-    public void removeStudents(List<Student> removeStudents) {
+    public static void removeStudents(List<Student> removeStudents) {
 
         students.removeAll(removeStudents);
     }
 
-    public void addGroups(List<Student> newStudents) {
+    public static void addStudents(List<Student> newStudents) {
 
         students.addAll(newStudents);
     }
 
-    public List<Student> getStudents() {
+    public static List<Student> getStudents() {
 
         return students;
     }

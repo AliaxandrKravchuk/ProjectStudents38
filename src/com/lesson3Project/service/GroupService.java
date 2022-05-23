@@ -29,5 +29,4 @@ public class GroupService {
         Scanner scanner = new Scanner(System.in);
         group.setName(scanner.nextLine());
     }
-    // добавить метод изменения имени группы
 }
