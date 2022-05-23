@@ -12,6 +12,10 @@ public class Teacher extends People implements Comparable<Teacher> {
         super(name, sname, age, pay, hour, address);
     }
 
+    public Teacher(String name, String sname, Integer age, Address address) {
+        super(name, sname, age, address);
+    }
+
     public void displayInfo() {
         System.out.println("Учитель:" + "\n ФИО: " + getName() + " " + getSname() + "\n Возраст: " + getAge() + "\n Зарплата: " + zpm() + "\n Адрес: " + getAddress().displayInfo());
     }

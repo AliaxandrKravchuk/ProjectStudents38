@@ -11,6 +11,7 @@ import com.lesson3Project.service.StudentServise;
 import com.lesson3Project.service.TeacherServise;
 import com.lesson3Project.util.AgeUtil;
 import com.lesson3Project.util.Converter;
+import com.lesson3Project.util.FileReader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,28 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static final String studentsPatch = "students.txt";
+    private static final String teachersPatch = "teachers.txt";
+
     public static void main(String[] args) {
+
+//        Group group2 = new Group("Group1", 1);
+//        Group group3 = new Group("Group2", 2);
+//
+//        ArrayList<Teacher> listTeacher = new ArrayList<>();
+//        ArrayList<String> dataString = FileReader.ListParser(studentsPatch);
+//        System.out.println(dataString);
+//        for (String value : dataString) {
+//            String[] tempStr = FileReader.StringParser(value);
+//            group2.addStudent(FileReader.addStudent(tempStr));
+//            group3.addStudent(FileReader.addStudent(tempStr));
+//        }
+//        dataString = FileReader.ListParser(teachersPatch);
+//        System.out.println(dataString);
+//        for (String value : dataString) {
+//            String[] tempStr = FileReader.StringParser(value);
+//            listTeacher.add(FileReader.addTeacher(tempStr));
+//        }
 
         GroupRepository groupRepository = new GroupRepository();
         GroupService groupService = new GroupService(groupRepository);
@@ -29,7 +51,7 @@ public class Main {
         student1.displayInfo();
 
         Address addressSt2 = new Address("Minsk", "a2", 2, 2);
-        Student student2 = new Student("n2", "s2", 10, addressSt2);
+        Student student2 = new Student("n2", "s2", 20, addressSt2);
         //student2.displayInfo();
 
         Address addressSt3 = new Address("Minsk", "a3", 3, 3);

@@ -1,0 +1,3 @@
+St1 SnameSt1 18 Minsk1 Street1 9 9
+St2 SnameSt2 20 Minsk2 Street2 2 2
+St3 SnameSt3 19 Minsk3 Street3 3 3
